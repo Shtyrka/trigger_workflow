@@ -50,5 +50,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ steps.get_workflow_token.outputs.token }}
-          repository: Anatolich911/workflow
+          repository: Shtyrka/workflow
           event-type: trigger-workflow
