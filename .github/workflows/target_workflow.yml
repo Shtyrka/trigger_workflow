@@ -51,4 +51,4 @@ jobs:
         with:
           token: ${{ steps.get_workflow_token.outputs.token }}
           repository: Shtyrka/workflow
-          event-type: trigger-workflow
+          event-type: trigger-workflows
