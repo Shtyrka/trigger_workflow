@@ -49,6 +49,6 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ steps.get_workflow_token.output.token }}
           repository: Shtyrka/workflow
           event-type: trigger-workflows
